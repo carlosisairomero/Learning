@@ -1,0 +1,53 @@
+* {
+   box-sizing: border-box;
+}
+
+body {
+   font-family: 'Open Sans', sans-serif;
+}
+
+.calc-table {
+   border-collapse: collapse;
+}
+
+.calc-table td {
+   border: 2px solid black;
+   height: 100px;
+   width: 100px;
+   text-align: center;
+   font-size: 40px;
+}
+
+.calc-table td:hover {
+   cursor: pointer;
+}
+
+#display-result {
+   text-align: right;
+}
+
+/* Each Button */
+
+.result {
+   background-color: black;
+   color: white;
+}
+
+.number-btn {
+   background-color: #d8d9db;
+   color: black;
+}
+
+.number-btn:hover {
+   background-color: #ebebeb;
+}
+
+.oper-btn {
+   background-color: #df974c;
+   color: white;
+}
+
+.oper-btn:hover {
+   background-color: #dfb07e;
+}
+
