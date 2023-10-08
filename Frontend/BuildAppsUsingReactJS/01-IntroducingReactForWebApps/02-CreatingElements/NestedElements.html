@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<script src="https://unpkg.com/react@16.7.0/umd/react.development.js"></script>
+	<script src="https://unpkg.com/react-dom@16.7.0/umd/react-dom.development.js"></script>
+    <style>
+        #para-id {
+            color: green;
+        }
+
+        h2 {
+            color:red;
+            font-style: italic; 
+        }
+      
+        #cel {
+            background-color: bisque;
+        }
+    </style>
+
+<body>
+<div id="my-react-app">
+	
+</div>
+<script>
+
+   var cell1 = React.createElement("td", {id: "cel", key : "cell1"}, "Cell 1");
+   var cell2 = React.createElement("td", {id: "cel", key : "cell2"}, "Cell 2");
+   var cell3 = React.createElement("td", {id: "cel", key : "cell3"}, "Cell 3");
+   var td_list = [cell1, cell2, cell3];
+
+	var table = React.createElement(
+      "div", 
+		{id : "id_div", key: "div_table_key"},
+		React.createElement(
+         "table", 
+         {border: "1", key: "table_key"}, 
+         React.createElement(
+            "tbody",
+            {key: "tbody_key"},
+            React.createElement(
+               "tr",
+               {key: "tr_key"},
+               td_list
+            )
+         )
+      )
+   );
+
+	var text = React.createElement(
+		"h2", 
+      {id : "text", key: "text"}, 
+		"React seems rather tedious to work with.");
+
+	var element_list = [table, text];
+
+	var outer_div_el = React.createElement(
+      "div", 
+      {id: "outer-div-id"}, 
+      element_list
+   );
+
+	ReactDOM.render(outer_div_el, document.getElementById("my-react-app"));
+
+</script>
+</body>
+</html>
