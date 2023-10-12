@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://unpkg.com/react@16.7.0/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16.7.0/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6.26.0/babel.js"></script>
+
+
+<style>
+    .bt {
+        padding: 6px;
+
+        border: 10px solid;
+        width: 350px;
+        font-size: 44px;
+    }
+    .bt-dark {
+        border-color: #333300;
+    }
+    .bt-light {
+        border-color: #ffffe6;
+    }
+
+    .bg-dark {
+        background-color: #808000;
+        color: white;
+    }
+    .bg-light {
+        background-color: #e6e600;
+        color: black;
+    }
+
+    .dialog {
+        margin-top: 12px;
+        padding: 12px;
+    }
+
+    .dialog-dark {
+        background-color: #333300;
+        color: white;
+    }
+    .dialog-light {
+        background-color: #ffffe6;
+        color: black;
+    }
+
+    .dialog-title {
+        font-family: Verdana;
+    }
+
+    .dialog-message {
+        font-family: Verdana;
+        font-size: 32px;
+    }
+
+    .button {
+        margin-top: 12px;
+        display: block;
+        width: 100px;
+        cursor: pointer;
+        line-height: 26px;
+        font-size: 14px;
+    }
+    .button-dark {
+        background-color: #333300;
+        color: white;
+    }
+    .button-dark:hover {
+        background-color: #ffffe6;
+        color: black;
+    }
+    .button-light {
+        background-color: #ffffe6;
+        color: black;
+    }
+    .button-light:hover {
+        background-color: #333300;
+        color: white;
+    }
+
+</style>    
+</head>
+<body>
+<div class="container" id="react-no-context">
+</div>
+<script type='text/babel' src="NoContext.js">
+</script>
+</body>
+</html>
